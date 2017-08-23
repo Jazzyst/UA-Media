@@ -84,6 +84,7 @@ nav
 		.nav-left
 			float: left
 			margin-left: 110px
+
 		.nav-right
 			float: right
 			margin-right: 20px
@@ -126,7 +127,7 @@ nav
 				.vitamin-ico
 					font-size: 32px
 				.jar-ico
-					width: 24px
+					width: 27px
 					height: 28px
 					background-image: url("../img/icons/jar.png")
 				&:hover
@@ -154,11 +155,122 @@ nav
 
 	// section1
 .section1
-	height: 100vh
+	position: relative
+	height: auto
 	width: 100%
 	background-image: url("../img/bg1.jpg")
 	background-repeat: no-repeat
 	background-size: cover
+
+.main-heading
+	max-width: 779px
+	margin: 0 auto
+	padding-top: 100px
+	padding-bottom: 420px
+	img
+		width: 100%
+.coctails-wrap
+	position: absolute
+	width: 100%
+	bottom: 150px
+.coctails
+	float: left
+	position: relative
+	// width: 450px
+	// height: 297px
+	width: 568px
+	height: 391px
+	background-image: url("../img/coctail2.png")
+	background-repeat: no-repeat
+	background-size: cover
+	transition: .3s
+	&:hover
+		background-image: url("../img/coctail-hover2.png")
+.offer
+	position: absolute
+	left: 53%
+	top: 47%
+	transform: translate(-50%, -50%)
+	text-align: center
+	span
+		font-size: 57.35px
+		line-height: 1em
+		color: #f8f907
+		font-family: "Firenight-Regular", sans-serif
+		text-shadow: 4px 4px 4px rgba(0, 0, 0, .4)
+.tablets
+	position: relative
+	float: right
+	// width: 395px
+	// height: 334px
+	width: 513px
+	height: 457px
+	background-image: url("../img/tabs.png")
+	background-size: cover
+	transition: .3s
+	&:hover
+		background-image: url("../img/tabs-hover.png")
+.arrow,
+.arrow2
+	position: absolute
+	top: -80px
+	left: 50%
+	width: 71px
+	height: 94px
+	transform: translate(-50%, 0)
+	background-image: url("../img/arrow.png")
+	background-size: cover
+.arrow
+	animation: arrow 1.2s ease-in-out infinite
+.arrow2
+	animation: arrow2 1.5s ease-in-out infinite
+	top: -60px
+
+@keyframes arrow
+	0%
+	 top: -80px
+	50%
+	 top: -60px
+	100%
+	 top: -80px
+
+@keyframes arrow2
+	0%
+	 top: -60px
+	50%
+	 top: -40px
+	100%
+	 top: -60px
+
+.milk
+	position: absolute
+	bottom: -8px
+	left: 0
+	width: 100%
+	z-index: 50
+	img
+		width: 100%
+	.footnote
+		position: absolute
+		font-family: "Firenight-Regular", sans-serif
+		font-size: 14px
+		color: #007dcb
+		text-transform: uppercase
+		bottom: 20px
+		left: 50%
+		transform: translate(-50%, 0)
+.tetrapak-logo
+	position: absolute
+	left: 50px
+	bottom: 15px
+	width: 91px
+	height: 91px
+	z-index: 10
+	background-image: url("../img/tetrapak.png")
+	background-size: cover
+	img
+		width: 100%
+
 	// section1 END
 
 @import "_media" // Всегда в конце
