@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Firenight-Regular';
+  src: url('Firenight-Regular.eot?#iefix') format('embedded-opentype'),  url('Firenight-Regular.otf')  format('opentype'),
+	     url('Firenight-Regular.woff') format('woff'), url('Firenight-Regular.ttf')  format('truetype'), url('Firenight-Regular.svg#Firenight-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
