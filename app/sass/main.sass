@@ -153,6 +153,122 @@ nav
 
 
 
+
+
+
+// sidebar-menu
+
+.sidebar-menu
+	position: fixed
+	top: 220px
+	right: 0
+	width: 51px
+	border-radius: 10px
+	background-color: rgba(255,255,255,.6)
+	z-index: 100
+	ul
+		list-style-type: none
+		padding: 0
+		li
+			margin: 0
+			margin-left: 3px
+			width: 51px
+			background-repeat: no-repeat
+			cursor: pointer
+			position: relative
+			a
+				width: 51px
+				background-repeat: no-repeat
+				display: block
+				opacity: 0
+				transition: .3s
+			.menu-item1
+				height: 45px
+				background-image: url("../img/sidebar.png")
+				background-position: -51px 0
+			.menu-item2
+				height: 60px
+				background-image: url("../img/sidebar.png")
+				background-position: -51px -45px
+			.menu-item3
+				height: 57px
+				background-image: url("../img/sidebar.png")
+				background-position: -51px -105px
+			.menu-item4
+				height: 55px
+				background-image: url("../img/sidebar.png")
+				background-position: -51px -162px
+			.menu-item5
+				height: 58px
+				background-image: url("../img/sidebar.png")
+				background-position: -51px -217px
+		.li-item1
+			height: 45px
+			background-image: url("../img/sidebar.png")
+			background-position: 0 0
+			&.active
+				background-position: -102px 0
+
+		.li-item2
+			height: 60px
+			background-image: url("../img/sidebar.png")
+			background-position: 0 -45px
+			&.active
+				background-position: -102px -45px
+		.li-item3
+			height: 57px
+			background-image: url("../img/sidebar.png")
+			background-position: 0 -105px
+			&.active
+				background-position: -102px -105px
+		.li-item4
+			height: 55px
+			background-image: url("../img/sidebar.png")
+			background-position: 0 -162px
+			&.active
+				background-position: -102px -162px
+		.li-item5
+			height: 58px
+			background-image: url("../img/sidebar.png")
+			background-position: 0 -217px
+			&.active
+				background-position: -102px -217px
+		li
+			&:hover
+				a
+					opacity: 1
+			&.active
+				.arrow3
+					display: block
+
+.arrow3
+	position: absolute
+	left: -90px
+	top: 50%
+	transform: translate(0, -50%) rotate(-90deg)
+	width: 71px
+	height: 94px
+	background-image: url("../img/arrow.png")
+	background-size: cover
+	display: none
+	animation: arrow3 1.2s ease-in-out infinite
+
+
+@keyframes arrow3
+	0%
+	 left: -90px
+	50%
+	 left: -80px
+	100%
+	 left: -90px
+// sidebar-menu END
+
+
+
+
+
+
+
 	// section1
 .section1
 	position: relative
@@ -167,29 +283,32 @@ nav
 	margin: 0 auto
 	padding-top: 100px
 	padding-bottom: 420px
+	animation-delay: 0.3s
 	img
 		width: 100%
+
 .coctails-wrap
 	position: absolute
 	width: 100%
 	bottom: 150px
+
 .coctails
 	float: left
 	position: relative
-	// width: 450px
-	// height: 297px
 	width: 568px
 	height: 391px
 	background-image: url("../img/coctail2.png")
 	background-repeat: no-repeat
 	background-size: cover
 	transition: .3s
+	animation-delay: 1s
 	&:hover
 		background-image: url("../img/coctail-hover2.png")
+
 .offer
 	position: absolute
 	left: 53%
-	top: 47%
+	top: 43%
 	transform: translate(-50%, -50%)
 	text-align: center
 	span
@@ -198,18 +317,20 @@ nav
 		color: #f8f907
 		font-family: "Firenight-Regular", sans-serif
 		text-shadow: 4px 4px 4px rgba(0, 0, 0, .4)
+		animation-delay: 1.7s
+
 .tablets
 	position: relative
 	float: right
-	// width: 395px
-	// height: 334px
 	width: 513px
 	height: 457px
 	background-image: url("../img/tabs.png")
 	background-size: cover
 	transition: .3s
+	animation-delay: 1s
 	&:hover
 		background-image: url("../img/tabs-hover.png")
+
 .arrow,
 .arrow2
 	position: absolute
@@ -259,6 +380,7 @@ nav
 		bottom: 20px
 		left: 50%
 		transform: translate(-50%, 0)
+		
 .tetrapak-logo
 	position: absolute
 	left: 50px
